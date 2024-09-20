@@ -11,7 +11,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Background from "./components/Background/Background";
 import Contact from "./components/Contact/Contact";
-import Experience from "./components/Experience/Experience";
+// import Experience from "./components/Experience/Experience";
 
 function App() {
 	return (
