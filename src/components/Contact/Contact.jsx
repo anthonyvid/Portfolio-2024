@@ -19,6 +19,13 @@ const Contact = () => {
 		visible: { opacity: 1, y: 0 },
 	};
 
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
 	const handleCopy = () => {
 		if (isAnimating) return;
 
@@ -96,7 +103,9 @@ const Contact = () => {
 				</motion.p>
 				<div>
 					<p>Back to top</p>
-					<FaArrowUp />
+					<div onClick={scrollToTop}>
+						<FaArrowUp />
+					</div>
 				</div>
 			</div>
 		</div>
