@@ -1,0 +1,66 @@
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  overflow: auto;
+  min-height: 100vh;
+  padding: 50px 0px;
+}
+.hero .text-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .text-content h1 {
+  font-size: calc(5vw + 2.5vh);
+  font-family: "Body";
+}
+.hero .text-content div:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hero .text-content div:first-of-type .vertical-line {
+  margin-left: 10px;
+  height: 80%;
+  border-left: 2px solid #888888;
+}
+.hero .text-content div:first-of-type .name-wrap h2 {
+  font-size: calc(2vw + 1vh);
+  font-family: "Body";
+}
+.hero .text-content div:first-of-type .name-wrap h2 span {
+  font-family: "BodyMedium";
+}
+.hero .text-content div:first-of-type .name-wrap p {
+  font-size: 1.5rem;
+  font-family: "BodyMedium";
+}
+.hero .text-content div:first-of-type .name-wrap p span {
+  background: linear-gradient(to right, rgba(255, 184, 122, 0.5), rgba(255, 133, 167, 0.5), rgba(107, 102, 255, 0.5), rgba(31, 221, 255, 0.5), rgba(192, 192, 192, 0.5));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "BodyBold";
+  background-size: 200% 200%;
+  animation: flow 10s ease-in-out infinite;
+}
+.hero .blob-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: plum;
+  width: 350px;
+  height: 350px;
+  border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 13s ease-in-out infinite;
+  border: 3px solid black;
+}
+.hero .profile-photo {
+  width: 100%;
+}/*# sourceMappingURL=hero.css.map */

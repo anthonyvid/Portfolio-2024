@@ -1,0 +1,77 @@
+.about {
+	width: 100%;
+	padding: 50px 10%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgb(34, 22, 17, 0.001);
+	backdrop-filter: blur(2px) saturate(150%);
+	scroll-snap-align: start;
+
+	.top-section {
+		display: flex;
+		gap: 100px;
+
+		div {
+			display: flex;
+			gap: 10px;
+
+			h1 {
+				font-family: "BodyMedium";
+				font-size: 5rem;
+			}
+
+			h3 {
+				font-family: "Playwrite CU", cursive;
+				font-size: 1.2rem;
+			}
+		}
+
+		p {
+			font-family: "BodyLight";
+			font-size: 1.5rem;
+		}
+	}
+
+	.skills {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		h2 {
+			font-family: "BodyMedium";
+			font-size: 1.7rem;
+		}
+
+		.languages,
+		.personal,
+		.technologies {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+
+			div {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 20px;
+				flex-wrap: wrap;
+			}
+
+			.technologies-icons {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 20px;
+				justify-items: center;
+				align-items: center;
+			}
+
+			svg {
+				font-size: 40px !important;
+			}
+		}
+	}
+}

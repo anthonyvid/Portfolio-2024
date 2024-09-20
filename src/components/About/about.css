@@ -1,0 +1,73 @@
+.about {
+  width: 100%;
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(34, 22, 17, 0.001);
+  -webkit-backdrop-filter: blur(2px) saturate(150%);
+          backdrop-filter: blur(2px) saturate(150%);
+  scroll-snap-align: start;
+}
+.about .top-section {
+  display: flex;
+  gap: 100px;
+}
+.about .top-section div {
+  display: flex;
+  gap: 10px;
+}
+.about .top-section div h1 {
+  font-family: "BodyMedium";
+  font-size: 5rem;
+}
+.about .top-section div h3 {
+  font-family: "Playwrite CU", cursive;
+  font-size: 1.2rem;
+}
+.about .top-section p {
+  font-family: "BodyLight";
+  font-size: 1.5rem;
+}
+.about .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about .skills h2 {
+  font-family: "BodyMedium";
+  font-size: 1.7rem;
+}
+.about .skills .languages,
+.about .skills .personal,
+.about .skills .technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.about .skills .languages div,
+.about .skills .personal div,
+.about .skills .technologies div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.about .skills .languages .technologies-icons,
+.about .skills .personal .technologies-icons,
+.about .skills .technologies .technologies-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.about .skills .languages svg,
+.about .skills .personal svg,
+.about .skills .technologies svg {
+  font-size: 40px !important;
+}/*# sourceMappingURL=about.css.map */

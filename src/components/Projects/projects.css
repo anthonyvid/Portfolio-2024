@@ -1,0 +1,103 @@
+.projects {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  padding: 50px 10%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(34, 22, 17, 0.001);
+  -webkit-backdrop-filter: blur(2px) saturate(150%);
+          backdrop-filter: blur(2px) saturate(150%);
+}
+.projects .top-section {
+  display: flex;
+  gap: 100px;
+}
+.projects .top-section div {
+  display: flex;
+  gap: 10px;
+}
+.projects .top-section div h1 {
+  font-family: "BodyMedium";
+  font-size: 5rem;
+}
+.projects .top-section div h3 {
+  font-family: "Playwrite CU", cursive;
+  font-size: 1.2rem;
+}
+.projects .project-container {
+  display: flex;
+  flex-direction: column;
+}
+.projects .project-container .project {
+  display: flex;
+  margin-bottom: 20%;
+  gap: 100px;
+}
+.projects .project-container .project .project-img {
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+.projects .project-container .project .project-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.projects .project-container .project .project-info h1 {
+  font-family: "BodyBold";
+  font-size: 3.5rem;
+}
+.projects .project-container .project .project-info p {
+  font-family: "BodyLight";
+  font-size: 1.3rem;
+}
+.projects .project-container .project .project-info p span {
+  font-family: "BodyMedium";
+}
+.projects .project-container .project .project-info .pills,
+.projects .project-container .project .project-info .icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.projects .project-container .project .project-info .icons {
+  margin-top: 10px;
+  gap: 15px;
+}
+.projects .project-container .project .project-info .icons img {
+  width: 40px;
+}
+.projects .project-container .project .project-info .icons svg {
+  font-size: 40px;
+}
+
+@media (min-width: 999px) {
+  .project {
+    margin-bottom: 10% !important;
+  }
+  .project .project-img {
+    max-width: 40%;
+  }
+  .project .project-img-rect {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+  .project .project-info {
+    flex: 1;
+  }
+  .project .project-info h1 {
+    text-align: left !important;
+  }
+  .project .project-info p {
+    text-align: left;
+  }
+}/*# sourceMappingURL=projects.css.map */

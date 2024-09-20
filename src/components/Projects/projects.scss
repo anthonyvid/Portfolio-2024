@@ -1,0 +1,121 @@
+.projects {
+	margin-top: 100px;
+	width: 100%;
+	display: flex;
+	padding: 50px 10%;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	gap: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: rgb(34, 22, 17, 0.001);
+	backdrop-filter: blur(2px) saturate(150%);
+
+	.top-section {
+		display: flex;
+		gap: 100px;
+
+		div {
+			display: flex;
+			gap: 10px;
+
+			h1 {
+				font-family: "BodyMedium";
+				font-size: 5rem;
+			}
+
+			h3 {
+				font-family: "Playwrite CU", cursive;
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.project-container {
+		display: flex;
+		flex-direction: column;
+
+		.project {
+			display: flex;
+			// justify-content: center;
+			margin-bottom: 20%;
+			gap: 100px;
+
+			.project-img {
+				width: 40%;
+				object-fit: cover;
+				height: auto;
+			}
+
+			.project-info {
+				display: flex;
+				gap: 10px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: start;
+
+				h1 {
+					font-family: "BodyBold";
+					font-size: 3.5rem;
+				}
+
+				p {
+					font-family: "BodyLight";
+					font-size: 1.3rem;
+
+					span {
+						font-family: "BodyMedium";
+					}
+				}
+
+				.pills,
+				.icons {
+					display: flex;
+					gap: 10px;
+					align-items: center;
+					justify-content: flex-start;
+					flex-wrap: wrap;
+				}
+
+				.icons {
+					margin-top: 10px;
+					gap: 15px;
+
+					img {
+						width: 40px;
+					}
+				}
+
+				.icons svg {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 999px) {
+	.project {
+		margin-bottom: 10% !important;
+
+		.project-img {
+			max-width: 40%;
+		}
+
+		.project-img-rect {
+			object-fit: contain !important;
+		}
+
+		.project-info {
+			flex: 1;
+
+			h1 {
+				text-align: left !important;
+			}
+
+			p {
+				text-align: left;
+			}
+		}
+	}
+}

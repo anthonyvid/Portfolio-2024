@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" stroke="gray">
+  <g stroke-width="2" fill="transparent">
+    <circle cx="90" cy="90" r="88"/>
+    <circle cx="90" cy="90" r="66"/>
+    <circle cx="90" cy="90" r="44"/>
+    <circle cx="90" cy="90" r="22"/>
+    <path d="M90 2v176m62-26L28 28m124 0L28 152m150-62H2"/>
+  </g>
+  <path d="M90 90h18a18 18 0 0 0 0-5zm0 0 34-43a55 55 0 0 0-15-8zm0 0L74 18a74 74 0 0 0-31 15zm0 0L32 62a65 65 0 0 0-5 39zm0 0-33 16a37 37 0 0 0 2 5zm0 0-10 45a46 46 0 0 0 18 0zm0 0 46 58a74 74 0 0 0 12-12z" opacity=".8"/>
+</svg>

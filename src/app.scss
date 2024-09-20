@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@font-face {
+	font-family: "BodyBlack";
+	src: local("SatoshiBlack"),
+		url("./fonts/SatoshiBlack.ttf") format("truetype");
+}
+@font-face {
+	font-family: "BodyBold";
+	src: local("SatoshiBold"), url("./fonts/SatoshiBold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "BodyMedium";
+	src: local("SatoshiMedium"),
+		url("./fonts/SatoshiMedium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "BodyLight";
+	src: local("SatoshiLight"),
+		url("./fonts/SatoshiLight.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Body";
+	src: local("SatoshiRegular"),
+		url("./fonts/SatoshiRegular.ttf") format("truetype");
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+.master-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Body";
+	scroll-behavior: smooth;
+}
+
+// @media
+@media (max-width: 70rem) {
+	.grid {
+		grid-template-columns: repeat(6, 1fr) !important;
+	}
+}
+
+@media (min-width: 2500px) {
+	.hero,
+	.about,
+	.projects,
+	.contact {
+		padding: 0 20% !important;
+	}
+}
+
+@media (max-width: 970px) {
+	.hero {
+		padding: 0 50px;
+		gap: 40px !important;
+	}
+}
+
+@media (max-width: 1150px) {
+	.project-container .project {
+		gap: 50px !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.project-container .project {
+		flex-direction: column !important;
+		align-items: center;
+		gap: 20px !important;
+
+		.project-img {
+			width: 100% !important;
+			margin-bottom: 25px;
+		}
+
+		.project-info,
+		.pills,
+		.icons {
+			justify-content: center !important;
+			align-items: center !important;
+			text-align: center;
+
+			h1 {
+				font-size: 3rem !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.hero {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+
+		.text-content {
+			align-items: center !important;
+			width: 100% !important;
+			height: auto !important;
+			text-align: center !important;
+			padding: 0 40px !important;
+			.vertical-line {
+				display: none !important;
+			}
+		}
+	}
+
+	.about,
+	.projects,
+	.contact {
+		.top-section {
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: center;
+			gap: 0 !important;
+
+			div {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		.skills {
+			gap: 50px;
+		}
+	}
+
+	.email-div {
+		text-align: center !important;
+		h2 {
+			font-size: calc(2.7vw + 1.5vh) !important;
+		}
+	}
+
+	.bottom-div {
+		justify-content: space-between !important;
+		align-items: center !important;
+	}
+
+    .top-div {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 500px) {
+	.blob-container {
+		width: 200px !important;
+		height: 200px !important;
+	}
+
+	.name-wrap {
+		h2 {
+			font-size: 1.5rem !important;
+
+			span {
+				font-family: "BodyMedium" !important;
+			}
+		}
+	}
+}
+
+// Animations
+@keyframes flow {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes morph {
+	0% {
+		border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+	}
+	33% {
+		border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+	}
+	34% {
+		border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+	}
+	67% {
+		border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+	}
+	68% {
+		border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+	}
+	100% {
+		border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+	}
+}
+
+@keyframes gradientFlow {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
