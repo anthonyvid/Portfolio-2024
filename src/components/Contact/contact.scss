@@ -37,6 +37,13 @@
 		justify-content: space-between;
 		align-items: center;
 
+		.copywright {
+			display: flex;
+			align-items: center;
+            justify-content: center;
+            gap: 5px;
+		}
+
 		div {
 			display: flex;
 			justify-content: center;

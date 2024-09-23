@@ -48,6 +48,12 @@ const Contact = () => {
 		},
 	};
 
+	const onLinkClick = (to) => {
+		if (to && typeof to === "string") {
+			window.open(to, "_blank").focus();
+		}
+	};
+
 	return (
 		<div className="contact">
 			<div className="top-section">
@@ -88,12 +94,21 @@ const Contact = () => {
 			</div>
 
 			<div className="top-div">
-				<FaGithub />
-				<FaLinkedin />
+				<FaGithub
+					onClick={() => onLinkClick("https://github.com/anthonyvid")}
+				/>
+				<FaLinkedin
+					onClick={() =>
+						onLinkClick(
+							"https://www.linkedin.com/in/anthonyvidovic/"
+						)
+					}
+				/>
 			</div>
 
 			<div className="bottom-div">
 				<motion.p
+					className="copywright"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.5 }}
